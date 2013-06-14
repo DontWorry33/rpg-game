@@ -1,0 +1,15 @@
+Hussain Hassam
+Block 2-4
+December 19th, 2012
+
+Term 2 IDS Assignment To-Do List
+
+1. Create a map-creator which lets me create maps visually (in a GUI) and lets me drag/drop tiles around to form a map
+2. Have a starting screen which lets you customize your character
+3. Equipping system where it equips items to the appropriate slots
+4. Display menu showing stats such as defence,hp,mana,strength,critical hit, etc.
+5. Decide which battle system to implement (actual fighting or turn based)
+6. Implement many more items
+7. Start making NPC's and quests (objectives in the game)
+8. Re-design tile system (won't work for more than 10 tiles right now)
+9. Work on sound effects for things like picking up item, equipping item, background music, etc.

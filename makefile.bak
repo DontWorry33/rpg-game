@@ -1,0 +1,26 @@
+CFLAGS=--std=c++0x -fPIC -g3
+
+all: rpg.c
+rpg.exe: animation.exe tiles.exe strings.exe characterstats.exe character.exe fade.exe items.exe events.exe start_game.exe
+	g++ -o rpg.exe rpg.cpp $(CFLAGS) animation.exe tiles.exe strings.exe characterstats.exe character.exe fade.exe items.exe events.exe start_game.exe -lsfml-audio -lsfml-window -lsfml-system -lsfml-graphics -lsfml-network  -g3
+animation.exe:
+	g++ -c -o animation.exe animation.cpp $(CFLAGS)
+tiles.exe:
+	g++ -c -o tiles.exe tiles.cpp $(CFLAGS)
+strings.exe:
+	g++ -c -o strings.exe strings.cpp $(CFLAGS)
+characterstats.exe:
+	g++ -c -o characterstats.exe characterstats.cpp $(CFLAGS)
+character.exe:
+	g++ -c -o character.exe character.cpp $(CFLAGS)
+fade.exe:
+	g++ -c -o fade.exe fade.cpp $(CFLAGS)
+items.exe:
+	g++ -c -o items.exe items.cpp $(CFLAGS)
+events.exe:
+	g++ -c -o events.exe events.cpp $(CFLAGS)
+start_game.exe:
+	g++ -c -o start_game.exe start_game.cpp $(CFLAGS)
+	
+clean:
+	rm -f *.exe
